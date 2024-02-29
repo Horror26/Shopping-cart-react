@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Product from "../components/Product";
 import Spinner from "../components/Spinner.jsx";
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
   const API_URL = "https://fakestoreapi.com/products";
@@ -28,6 +29,10 @@ const Home = () => {
 
   return(
     <div >
+    <Helmet>
+      <title>Home</title>
+      <meta name="description" content="Add your faviorate  products to cart from here" />
+    </Helmet>
       {
         loading? <Spinner/> :
         posts.length > 0 ?

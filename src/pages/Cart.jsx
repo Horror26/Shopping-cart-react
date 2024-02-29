@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import CartItem from "../components/CartItem";
 import { useEffect, useState } from "react";
+import { Helmet } from 'react-helmet';
 
 
 
@@ -15,6 +16,10 @@ const Cart = () => {
   },[cart])
   return(
     <div>
+    <Helmet>
+      <title>Cart</title>
+      <meta name="description" content="By your items from here" />
+    </Helmet>
     {
       cart.length > 0  ? 
       
