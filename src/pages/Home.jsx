@@ -31,7 +31,7 @@ const Home = () => {
     <div >
     <Helmet>
       <title>Home</title>
-      <meta name="description" content="Add your faviorate  products to cart from here" />
+      <meta name="description" content="Add your faviorate  products from horror shop to cart from here" />
     </Helmet>
       {
         loading? <Spinner/> :

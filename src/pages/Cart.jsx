@@ -18,7 +18,7 @@ const Cart = () => {
     <div>
     <Helmet>
       <title>Cart</title>
-      <meta name="description" content="By your items from here" />
+      <meta name="description" content="By your items from horror shop here" />
     </Helmet>
     {
       cart.length > 0  ? 
@@ -36,7 +36,7 @@ const Cart = () => {
         <div className="w-full flex flex-col gap-8 justify-between sm:items-center md:items-center">
   
           <div className="mt-20">
-            <p className="text-xl text-[#166534] uppercase font-[600]">Your Cart</p>
+          <h1 className="text-xl text-[#166534] uppercase font-[600]">Your Cart</h1>
             <p className="text-5xl font-[600] text-[#15803d] uppercase mb-4">Summary</p>
             <p className="font-[600] text-xl text-slate-700">
               Total Items: <span className="font-normal">{cart.length}</span>
