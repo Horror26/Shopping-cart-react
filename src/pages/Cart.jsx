@@ -18,7 +18,7 @@ const Cart = () => {
     <div>
     <Helmet>
       <title>Cart</title>
-      <meta name="description" content="By your items from horror shop here" />
+      <meta name="description" content="Shopp your items from horror shopping cart here" />
     </Helmet>
     {
       cart.length > 0  ? 
